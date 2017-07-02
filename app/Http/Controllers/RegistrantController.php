@@ -25,7 +25,7 @@ class RegistrantController extends Controller
     public function index()
     {
         $registrants = Registrant::all();
-        return view('registrants.index', compact($registrants));
+        return view('registrants.index', compact('registrants'));
     }
 
     /**

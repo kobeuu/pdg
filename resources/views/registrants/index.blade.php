@@ -27,22 +27,16 @@
           </tr>
           </thead>
           <tbody>
+          @foreach ($registrants as $registrant)
           <tr>
-            <td><b>Dede Iskandar</b></td>
-            <td>L</td>
-            <td>Mahpudin / Iib</td>
-            <td>Sukabumi</td>
-            <td>BPB 3</td>
-            <td><button type="button" class="btn btn-info btn-xs">Edit</button> | <button type="button" class="btn btn-danger btn-xs">Hapus</button></td>
+              <td><b>{{ $registrant->name }}</b></td>
+              <td>{{ $registrant->sex }}</td>
+              <td>{{ $registrant->father }} / {{ $registrant->mother }}</td>
+              <td>{{ $registrant->address }}</td>
+              <td>BPB 3</td>
+              <td><button type="button" class="btn btn-info btn-xs">Edit</button> | <button type="button" class="btn btn-danger btn-xs">Hapus</button></td>
           </tr>
-          <tr>
-            <td><b>Dede Iskandar</b></td>
-            <td>L</td>
-            <td>Mahpudin / Iib</td>
-            <td>Sukabumi</td>
-            <td>BPB 3</td>
-            <td><button type="button" class="btn btn-info btn-xs">Edit</button> | <button type="button" class="btn btn-danger btn-xs">Hapus</button></td>
-          </tr>
+          @endforeach
           </tbody>
           <tfoot>
           <tr>
