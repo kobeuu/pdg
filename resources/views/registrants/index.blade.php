@@ -47,7 +47,7 @@
           <tfoot>
           <tr>
             <th>Nama Lengkap</th>
-            <th>Jenis Kelamin</th>
+            <th>JK</th>
             <th>Nama Orang tua</th>
             <th>Alamat</th>
             <th>Seleksi Program</th>
