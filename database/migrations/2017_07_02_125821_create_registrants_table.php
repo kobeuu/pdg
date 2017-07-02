@@ -15,10 +15,12 @@ class CreateRegistrantsTable extends Migration
     {
         Schema::create('registrants', function (Blueprint $table) {
             $table->increments('id');
-            $table->text('name');
+            $table->string('name', 50);
+            $table->enum('sex', ['L', 'P']);
+            $table->date('birth');
+            $table->string('father', 50);
+            $table->string('mother', 50);
             $table->text('address');
-            $table->text('images');
-            $table->boolean('status');
             $table->timestamps();
         });
     }
