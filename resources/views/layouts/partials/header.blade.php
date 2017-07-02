@@ -24,6 +24,25 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Green Skin -->
   <link rel="stylesheet" href="dist/css/skins/skin-green.min.css">
 
+  <style>
+    .app-name {
+      float: left;
+      line-height: 50px;
+      font-size: 25px;
+      font-weight: 700;
+    }
+    .app-name,
+    .app-name:hover {
+      color: white
+    }
+
+    @@media (max-width: 992px ) {
+      .app-name {
+        display: none;
+      }
+    }
+  </style>
+
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -72,26 +91,7 @@ desired effect
       <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
         <span class="sr-only">Toggle navigation</span>
       </a>
-      <!-- Navbar Right Menu -->
-      <div class="navbar-custom-menu">
-        <ul class="nav navbar-nav">
+      <a href="#" class="app-name">Aplikasi Seleksi Calon Penerima Manfaat Program</a>
 
-          <!-- User Account Menu -->
-          <li class="dropdown user user-menu">
-            <!-- Menu Toggle Button -->
-            <a class="dropdown-toggle" data-toggle="dropdown"
-              href="{{ route('logout') }}"
-                  onclick="event.preventDefault();
-                           document.getElementById('logout-form').submit();">
-
-              <!-- hidden-xs hides the username on small devices so only the image appears. -->
-              <i class="fa fa-sign-out"></i> <span class="hidden-xs">Keluar Aplikasi</span>
-              <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                  {{ csrf_field() }}
-              </form>
-            </a>
-          </li>
-        </ul>
-      </div>
     </nav>
   </header>
