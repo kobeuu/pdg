@@ -7,7 +7,7 @@
     <!-- Sidebar user panel (optional) -->
     <div class="user-panel">
       <div class="pull-left image">
-        <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+        <img src="dist/img/user-sf.png" class="img-circle" alt="User Image">
       </div>
       <div class="pull-left info">
         <p>Administrator</p>
@@ -37,12 +37,12 @@
       <li {{{ (Request::is('report') ? 'class=active' : '') }}} ><a href="/report"><i class="fa fa-line-chart"></i> <span>Statistik</span></a></li>
       <li {{{ (Request::is('settings') ? 'class=active' : '') }}} ><a href="/settings"><i class="fa fa-gear"></i> <span>Pengaturan</span></a></li>
       <li {{{ (Request::is('documentations') ? 'class=active' : '') }}} ><a href="/documentations"><i class="fa fa-book"></i> <span>Dokumentasi</span></a></li>
-      <li><a href="{{ route('logout') }}"
+      <li class="exit-menu"><a href="{{ route('logout') }}"
               onclick="event.preventDefault();
                 document.getElementById('logout-form').submit();">
 
           <!-- hidden-xs hides the username on small devices so only the image appears. -->
-          <i class="fa fa-power-off"></i> <span>Keluar Aplikasi</span>
+          <i class="fa fa-power-off"></i> <span>Keluar</span>
           <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
               {{ csrf_field() }}
           </form>
