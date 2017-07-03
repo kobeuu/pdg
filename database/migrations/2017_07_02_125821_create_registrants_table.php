@@ -20,6 +20,7 @@ class CreateRegistrantsTable extends Migration
             $table->date('birth');
             $table->string('father', 50);
             $table->string('mother', 50);
+            $table->string('phone_number', 50);
             $table->text('address');
             $table->timestamps();
         });
