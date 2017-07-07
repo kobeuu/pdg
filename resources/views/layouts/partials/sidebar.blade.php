@@ -31,12 +31,13 @@
         <ul class="treeview-menu">
           <li><a href="#"><i class="fa fa-circle-o"></i>Kriteria</a></li>
           <li><a href="#"><i class="fa fa-circle-o"></i>Bobot</a></li>
+          <li><a href="#"><i class="fa fa-circle-o"></i>Survey</a></li>
+          <li><a href="#"><i class="fa fa-check"></i>Penerima Manfaat</a></li>
         </ul>
       </li>
-      <li><a href="/calculate"><i class="fa fa-check"></i> <span>Penerima Manfaat</span></a></li>
       <li {{{ (Request::is('report') ? 'class=active' : '') }}} ><a href="/report"><i class="fa fa-line-chart"></i> <span>Statistik</span></a></li>
-      <li {{{ (Request::is('settings') ? 'class=active' : '') }}} ><a href="/settings"><i class="fa fa-gear"></i> <span>Pengaturan</span></a></li>
-      <li {{{ (Request::is('documentations') ? 'class=active' : '') }}} ><a href="/documentations"><i class="fa fa-book"></i> <span>Dokumentasi</span></a></li>
+      <li {{{ (Request::is('setting') ? 'class=active' : '') }}} ><a href="/setting"><i class="fa fa-gear"></i> <span>Pengaturan</span></a></li>
+      <li {{{ (Request::is('documentation') ? 'class=active' : '') }}} ><a href="/documentation"><i class="fa fa-book"></i> <span>Dokumentasi</span></a></li>
       <li class="exit-menu"><a href="{{ route('logout') }}"
               onclick="event.preventDefault();
                 document.getElementById('logout-form').submit();">
